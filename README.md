@@ -21,6 +21,12 @@
 
 ---
 
+##  Quick Navigation
+
+[Overview](#overview) · [Key Features](#key-features) · [Specifications](#technical-specifications) ([Chassis](#chassis) · [Drive](#drive-system) · [Power](#power-system) · [Electronics](#electronics)) · [Weapon](#weapon-system) · [Design & Engineering](#design--engineering) · [Assembly](#assembly-guide) · [Testing](#testing--calibration) · [Maintenance](#maintenance) · [BOM](#bill-of-materials-bom) · [Battle Record](#battle-record) · [Competition Notes](#competition-notes) · [Roadmap](#roadmap) · [Build Files](#build-files) · [Safety](#safety--rules-compliance) · [Credits](#credits) · [License](#license)
+
+---
+
 ##  Overview
 
 <div align="center">
@@ -92,6 +98,8 @@ two knockout wins en route to the podium in the 3 lb knockout bracket.
 | Connectors        | XT30                              |
 | Power distribution| DartPCB (Just 'Cuz)                |
 | Safety            | External power switch + removable link |
+
+<a id="weapon-system"></a>
 
 ### ⚔️ Weapon System
 | Item        | Specification                          |
@@ -278,6 +286,8 @@ reduces part count, and makes it fast to reprint spare parts between events.
 - Drive tuned for **high-traction pushing matches**
 
 ---
+
+<a id="roadmap"></a>
 
 ##  Upgrade Roadmap — v1 → v2
 
