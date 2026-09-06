@@ -233,6 +233,8 @@ reduces part count, and makes it fast to reprint spare parts between events.
 
 ##  Bill of Materials (BOM)
 
+> 📎 CAD files (STEP) for every machined and printed part are in [Build Files](#build-files).
+
 | Component      | Specification                            | Source / Link                                   |
 | -------------- | ---------------------------------------- | ----------------------------------------------- |
 | Drive motor    | 2× DartBox V2 Drive · VIPER 22 mm        | [🔗 DartBox Drive](https://justcuzrobotics.com/products/dartbox-squared-drive) |
@@ -308,12 +310,49 @@ Planned for **v2**:
 
 ##  Build Files
 
-| Path        | Description                                |
-| ----------- | ------------------------------------------ |
-| `cad/`      | [CAD source (Fusion 360 / STEP)] |
-| `drawings/` | [Dimensioned drawings, DXF cut files]      |
-| `parts/`    | [Order links]            |
-| `images/`   | Build & media photos                       |
+All CAD is provided as **STEP** files (universal — open in Fusion 360, SolidWorks, Onshape, FreeCAD…), plus the complete robot as a native **Fusion 360 archive (`.f3z`)**.
+
+### 🤖 Full Assembly — `Ronin_V1/Robot/`
+
+| File | Description | Size |
+|---|---|---|
+| [`ronin_V1.f3z`](Ronin_V1/Robot/ronin_V1.f3z) | Complete robot — native Fusion 360 archive (all sketches, bodies & joints) | ~20 MB |
+| [`ronin_V1.step`](Ronin_V1/Robot/ronin_V1.step) | Complete robot — universal STEP assembly | ~15 MB |
+
+### ⚙️ Machined Parts — `Ronin_V1/Parts/Machined_Parts/` (7075-T6 aluminum)
+
+| Part | File |
+|---|---|
+| Horizontal spinner bar | [`Horizontal_Spinner.step`](Ronin_V1/Parts/Machined_Parts/Horizontal_Spinner.step) |
+| Fork | [`Fork.step`](Ronin_V1/Parts/Machined_Parts/Fork.step) |
+
+### 🖨️ PETG Parts — `Ronin_V1/Parts/PETG_Parts/` (structural frame · Bambu Lab A1 Mini)
+
+| Part | File |
+|---|---|
+| Base plate | [`Base_Plate.step`](Ronin_V1/Parts/PETG_Parts/Base_Plate.step) |
+| Front plate | [`Front_Plate.step`](Ronin_V1/Parts/PETG_Parts/Front_Plate.step) |
+| Back plate | [`Back_Plate.step`](Ronin_V1/Parts/PETG_Parts/Back_Plate.step) |
+| Big top plate | [`Big_Top.step`](Ronin_V1/Parts/PETG_Parts/Big_Top.step) |
+| Small top plate | [`Small_Top.step`](Ronin_V1/Parts/PETG_Parts/Small_Top.step) |
+| Left inside wing | [`Left_Inside_Wing.step`](Ronin_V1/Parts/PETG_Parts/Left_Inside_Wing.step) |
+| Right inside wing | [`Right_Inside_Wing.step`](Ronin_V1/Parts/PETG_Parts/Right_Inside_Wing.step) |
+| Motor mount (variant 1) | [`Motor_Mount_1.step`](Ronin_V1/Parts/PETG_Parts/Motor_Mount_1.step) |
+| Motor mount (variant 2) | [`Motor_Mount_2.step`](Ronin_V1/Parts/PETG_Parts/Motor_Mount_2.step) |
+| Shaft spacer | [`Shaft_Spacer.step`](Ronin_V1/Parts/PETG_Parts/Shaft_Spacer.step) |
+
+### 🧽 TPU Parts — `Ronin_V1/Parts/TPU_Parts/` (flexible / shock-absorbing · Bambu Lab A1 Mini)
+
+| Part | File |
+|---|---|
+| Big weapon pulley | [`Big_Weapon_Pulley.step`](Ronin_V1/Parts/TPU_Parts/Big_Weapon_Pulley.step) |
+| Small weapon pulley | [`Small_Weapon_Pulley.step`](Ronin_V1/Parts/TPU_Parts/Small_Weapon_Pulley.step) |
+| Left outer wing | [`Left_Outer_Wing.step`](Ronin_V1/Parts/TPU_Parts/Left_Outer_Wing.step) |
+| Right outer wing | [`Right_Outer_Wing.step`](Ronin_V1/Parts/TPU_Parts/Right_Outer_Wing.step) |
+
+### 📷 Media — `images/`
+
+Build & battle photos (see [Overview](#overview) for the hero shots).
 
 ---
 
@@ -330,7 +369,7 @@ Planned for **v2**:
 ##  Credits
 
 RONIN was designed, built, and driven by **Anastasis Karaivazoglou** as part
-of the **IRONBRICK | Fibran team.
+of the **IRONBRICK | Fibran** team.
 
 Special thanks to our sponsors **[Fibran](https://fibran.com/)** and
 **[JLC](https://jlccnc.com/)** for their support of the build.

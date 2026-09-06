@@ -6,5 +6,8 @@ images/*.mp4
 # High-res originals (compressed versions are committed instead)
 images/*.JPEG
 
+# Tool artifacts
+.qodo/
+
 # Frame extraction scratch directory
 images/_frames/
