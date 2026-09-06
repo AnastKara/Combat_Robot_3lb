@@ -13,7 +13,7 @@
 [![Class](https://img.shields.io/badge/Class-3%20lb%20%7C%201.36%20kg-blue)](#)
 [![Config](https://img.shields.io/badge/Config-Belt--Driven%20Wedge-orange)](#)
 [![Status](https://img.shields.io/badge/Status-Competition%20Ready-green)](#)
-[![License](https://img.shields.io/badge/License-[License]-lightgray)](#)
+[![License](https://img.shields.io/badge/License-All%20rights%20reserved-lightgray)](#)
 
 </div>
 
@@ -55,16 +55,17 @@ performance consistent.
 | Material     | 6061-T6 aluminum + polycarbonate top  |
 | Architecture | 2-piece modular frame                 |
 | Fasteners    | M3 / M4 stainless steel               |
-| Dimensions   | **[L] × [W] × [H] in**                 |
-| Weight       | **[X.XX lb / XXXX g]** _(3.0 lb max)_ |
+| Dimensions   | 220 × 160 × 91 mm (8.7 × 6.3 × 3.6 in) |
+| Weight       | **1150 g (2.54 lb)** _(3.0 lb / 1.36 kg max)_ |
 
 ### ⚙️ Drive System
 | Item        | Specification                          |
 | ----------- | -------------------------------------- |
 | Drive type  | Belt-driven dual-wheel                 |
-| Motor       | D3536 class brushless outrunner (1×)    |
-| Motor KV    | **1450 kV** _(current)_                 |
-| Drive ESC   | **80 A** brushless _(current)_          |
+| Motor       | 2× DartBox V2 Drive gearmotors (VIPER model) |
+| Drive ESC   | **WEKA 20A** Dual Brushed Motor Controller |
+| Mainboard   | **Just 'Cuz Motherboard V4** (Just 'Cuz Robotics) |
+| Receiver    | **FS2A** — AFHDS-2A protocol           |
 | Wheels      | 3–4 in rubber / foam                   |
 | Belts       | **GT2 reinforced timing belts**        |
 | Top speed   | **[X mph / m·s⁻¹]**                     |
@@ -72,18 +73,20 @@ performance consistent.
 ### 🔋 Power System
 | Item              | Specification                     |
 | ----------------- | --------------------------------- |
-| Battery           | 3S LiPo, 450–850 mAh              |
+| Battery           | Tattu 3S LiPo · 11.1 V · 450 mAh · 75C |
 | Connectors        | XT30                              |
 | Power distribution| Custom micro-PD board             |
 | Safety            | External power switch + removable link |
 
 ### 📡 Electronics
-| Item               | Specification                |
-| ------------------ | ---------------------------- |
-| Receiver           | FS2A / ELRS / DSMX compatible|
-| Voltage regulation | 5 V BEC for receiver         |
-| Telemetry          | LED status indicator         |
-| Transmitter        | **[model]**                  |
+| Item               | Specification                      |
+| ------------------ | ---------------------------------- |
+| Mainboard          | **Just 'Cuz Motherboard V4** (Just 'Cuz Robotics) |
+| Drive ESC          | **WEKA 20A** Dual Brushed Motor Controller |
+| Receiver           | **FS2A** — AFHDS-2A protocol       |
+| Voltage regulation | 5 V BEC for receiver               |
+| Telemetry          | LED status indicator               |
+| Transmitter        | **FlySky FS-i6** — AFHDS-2A      |
 
 ---
 
@@ -103,20 +106,23 @@ drive chains. That philosophy drives three decisions:
   the electronics bay stays tight and clean
 
 ### Drivetrain
-A single **D3536-class brushless outrunner (1450 kV)** powers both wheels
-through **GT2 reinforced timing belts**, giving IRONBRICK its signature
-combination of traction and smooth torque delivery. Belt drive also reduces
-shock loading on the motor and gearbox during impacts — a key reliability win
-over direct chain-drive robots.
+Two **DartBox V2 Drive gearmotors (VIPER model, 22 mm)** turn both wheels through
+**GT2 reinforced timing belts**, powered by the **WEKA 20A Dual Brushed Motor
+Controller** and managed by the **Just 'Cuz Motherboard V4** mainboard. The
+DartBox V2 motors are lightweight and ultra-powerful for their size, giving
+IRONBRICK a strong power-to-weight ratio. Belt drive reduces shock loading on
+the motors and drivetrain during impacts — a key reliability win over direct
+chain-drive setups — while the WEKA dual ESC delivers smooth, high-traction
+torque for pushing matches.
 
-| Config      | Motor           | Drive ESC (current) |
-| ----------- | --------------- | ------------------- |
-| **Current** | D3536 · 1450 kV | 80 A                |
-| **Planned** | D3536 · 1200 kV | 40 A                |
+| Config      | Drive                                   | Electronics                          |
+| ----------- | --------------------------------------- | ------------------------------------ |
+| **Current** | 2× DartBox V2 Drive (VIPER) + GT2 belts | WEKA 20A dual ESC · JCMB V4 · FS2A  |
+| **Planned** | Brushless D3536 drivetrain              | 1200 kV motor + 40 A ESC            |
 
-> 🔧 **Upgrade path:** The planned **1200 kV / 40 A** combination trades
-> top-end wheel speed for higher torque efficiency and lighter electronics —
-> tuned for sustained pushing rather than raw speed.
+> 🔧 **Upgrade path:** For higher acceleration, IRONBRICK can swap to a
+> **brushless D3536** drivetrain (e.g., 1200 kV with a 40 A ESC) — trading some
+> low-end simplicity for faster wheel speed and lighter electronics.
 
 ### Weapon
 IRONBRICK's "weapon" is its **reinforced front wedge**: a low-sweep, angled
@@ -134,7 +140,7 @@ at every event to keep engagement angle consistent.
 3. Add the top plate **last** for easy internal access.
 
 ### 2. Drivetrain Installation
-1. Mount the drive motor securely; apply **thread-locker**.
+1. Mount the drive motors securely; apply **thread-locker**.
 2. Align pulleys and tension the GT2 belts.
 3. Install wheels and verify free rotation.
 
@@ -168,23 +174,25 @@ at every event to keep engagement angle consistent.
 - **Re-tighten all screws**, especially the wedge bolts
 - **Check motor bearings** for debris and re-grease as needed
 - **Replace wheels** when worn to maintain consistent traction
-- **Battery care** — keep 3S LiPos balanced and store them safely
+- **Battery care** — keep Tattu 3S LiPos balanced and store them safely (450 mAh nominal)
 
 ---
 
 ## 📦 Bill of Materials (BOM)
 
-| Component      | Specification                 |
-| -------------- | ----------------------------- |
-| Drive motor    | D3536 class brushless 1450 kV |
-| Drive ESC      | 80 A brushless                |
-| Battery        | 3S LiPo 450–850 mAh           |
-| Wheels         | 3–4 in rubber / foam          |
-| Belts          | GT2 reinforced timing belt    |
-| Chassis        | 6061-T6 Al + polycarbonate    |
-| Connectors     | XT30                          |
-| Receiver       | FS2A / ELRS / DSMX            |
-| Fasteners      | M3 / M4 stainless steel       |
+| Component      | Specification                            |
+| -------------- | ---------------------------------------- |
+| Drive motor    | 2× DartBox V2 Drive · VIPER 22 mm gearmotors |
+| Drive ESC      | WEKA 20A Dual Brushed Motor Controller   |
+| Mainboard      | Just 'Cuz Motherboard V4                 |
+| Receiver       | FS2A (AFHDS-2A protocol)                 |
+| Battery        | Tattu 3S LiPo · 450 mAh · 75C            |
+| Wheels         | 3–4 in rubber / foam                     |
+| Belts          | GT2 reinforced timing belts              |
+| Chassis        | 6061-T6 Al + polycarbonate               |
+| Connectors     | XT30                                     |
+| Transmitter    | FlySky FS-i6 (AFHDS-2A)              |
+| Fasteners      | M3 / M4 stainless steel                  |
 
 > Full BOM with part numbers and links: **[add file: bom.xlsx / parts/]**.
 
@@ -211,8 +219,8 @@ at every event to keep engagement angle consistent.
 ## 🚀 Upgrade Roadmap
 
 - [x] Belt-driven dual-wheel drivetrain
-- [x] Brushless D3536 · 1450 kV drive
-- [ ] **D3536 · 1200 kV + 40 A ESC** — more torque-efficient, lighter electronics
+- [x] Brushed drive + WEKA 20A dual ESC (JCMB V4 / FS2A)
+- [ ] **Brushless drive upgrade** — D3536 · 1200 kV + 40 A ESC for higher acceleration
 - [ ] **Hardened AR500 steel wedge** — more bite and durability
 - [ ] **Gyro-assisted driving** — stability under self-righting hits
 - [ ] **Quick-swap battery bay** — faster pit stops
@@ -242,12 +250,19 @@ at every event to keep engagement angle consistent.
 
 ## 🙏 Credits
 
-IRONBRICK built and driven by **[Your name / Team]**. [Sponsors / clubs /
-acknowledgements.]
+IRONBRICK was designed, built, and driven by **Anastasis Karaivazoglou** as part
+of the **IRONBRICK | Fibran** team.
+
+Special thanks to our sponsors **Fibran** and **JLC** for their support of the build.
 
 ## 📄 License
 
-[License type] — see the [LICENSE](LICENSE) file for details.
+**All rights reserved.** © [2026] Anastasis Karaivazoglou / IRONBRICK | Fibran.
+
+This project is provided for reference and personal use only. No part of the
+design, documentation, or media may be reproduced, distributed, or used in
+commercial or competitive projects without prior written permission.
+Sponsors: **Fibran** and **JLC**.
 
 ---
 
