@@ -3,5 +3,8 @@ images/*.MOV
 images/*.mov
 images/*.mp4
 
+# High-res originals (compressed versions are committed instead)
+images/*.JPEG
+
 # Frame extraction scratch directory
 images/_frames/
