@@ -1,0 +1,254 @@
+<!--
+  IRONBRICK — 3 lb Combat Robot README
+  Placeholders marked [LIKE THIS] are details only you know; fill them in or
+  reply and I'll update them.
+-->
+
+<div align="center">
+
+# 🧱 IRONBRICK
+
+### 3 lb (1.36 kg) Beetleweight Combat Robot — Belt-Driven Wedge
+
+[![Class](https://img.shields.io/badge/Class-3%20lb%20%7C%201.36%20kg-blue)](#)
+[![Config](https://img.shields.io/badge/Config-Belt--Driven%20Wedge-orange)](#)
+[![Status](https://img.shields.io/badge/Status-Competition%20Ready-green)](#)
+[![License](https://img.shields.io/badge/License-[License]-lightgray)](#)
+
+</div>
+
+---
+
+## 📸 Overview
+
+<img src="images/robot_hero.jpg" alt="IRONBRICK — belt-driven 3 lb wedge robot" width="600"/>
+
+> _A compact, belt-driven 3 lb combat robot engineered for durability, ease of
+> maintenance, and consistent performance in high-impact matches. IRONBRICK's
+> architecture focuses on robust drive power, efficient energy distribution,
+> and a reinforced front wedge built for pushing, deflecting, and controlling
+> opponents._
+
+Built for the **3 lb (1.36 kg) beetleweight class**, IRONBRICK is designed to be
+**serviceable between matches** — a modular two-piece frame with clean wiring
+and a reinforced aluminum structure that keeps repair times short and combat
+performance consistent.
+
+---
+
+## 🏆 Key Features
+
+- **Reinforced front wedge** — aggressive pushing, deflection, and positional control
+- **Belt-driven dual-wheel drivetrain** — smooth, high-traction torque delivery
+- **Modular 2-piece chassis** — fast repairs between matches
+- **Shock-resistant electronics mounting** — foam-damped ESCs and secure routing
+- **Clean internal wiring** — reliable and quick to troubleshoot
+- **Competition-ready layout** — compatible with most 3 lb rule sets
+
+---
+
+## 📋 Technical Specifications
+
+### 🧱 Chassis
+| Item         | Specification                         |
+| ------------ | ------------------------------------- |
+| Material     | 6061-T6 aluminum + polycarbonate top  |
+| Architecture | 2-piece modular frame                 |
+| Fasteners    | M3 / M4 stainless steel               |
+| Dimensions   | **[L] × [W] × [H] in**                 |
+| Weight       | **[X.XX lb / XXXX g]** _(3.0 lb max)_ |
+
+### ⚙️ Drive System
+| Item        | Specification                          |
+| ----------- | -------------------------------------- |
+| Drive type  | Belt-driven dual-wheel                 |
+| Motor       | D3536 class brushless outrunner (1×)    |
+| Motor KV    | **1450 kV** _(current)_                 |
+| Drive ESC   | **80 A** brushless _(current)_          |
+| Wheels      | 3–4 in rubber / foam                   |
+| Belts       | **GT2 reinforced timing belts**        |
+| Top speed   | **[X mph / m·s⁻¹]**                     |
+
+### 🔋 Power System
+| Item              | Specification                     |
+| ----------------- | --------------------------------- |
+| Battery           | 3S LiPo, 450–850 mAh              |
+| Connectors        | XT30                              |
+| Power distribution| Custom micro-PD board             |
+| Safety            | External power switch + removable link |
+
+### 📡 Electronics
+| Item               | Specification                |
+| ------------------ | ---------------------------- |
+| Receiver           | FS2A / ELRS / DSMX compatible|
+| Voltage regulation | 5 V BEC for receiver         |
+| Telemetry          | LED status indicator         |
+| Transmitter        | **[model]**                  |
+
+---
+
+## 🧱 Design & Engineering
+
+### Design Philosophy
+IRONBRICK is a **pushing-and-control robot**. Instead of chasing high-energy
+weapon hits, it wins through sustained aggression: getting its wedge under
+opponents, driving them into hazards, and disrupting their weapon mounts and
+drive chains. That philosophy drives three decisions:
+
+- **Strength over speed** — a belt-driven, high-torque drivetrain delivers
+  smooth, controllable pushing power in every match
+- **Serviceability** — everything that commonly breaks (belts, wheels, wedge,
+  ESC) is reachable within minutes between fights
+- **Efficient weight budget** — the wedge, chassis, and drive get the weight;
+  the electronics bay stays tight and clean
+
+### Drivetrain
+A single **D3536-class brushless outrunner (1450 kV)** powers both wheels
+through **GT2 reinforced timing belts**, giving IRONBRICK its signature
+combination of traction and smooth torque delivery. Belt drive also reduces
+shock loading on the motor and gearbox during impacts — a key reliability win
+over direct chain-drive robots.
+
+| Config      | Motor           | Drive ESC (current) |
+| ----------- | --------------- | ------------------- |
+| **Current** | D3536 · 1450 kV | 80 A                |
+| **Planned** | D3536 · 1200 kV | 40 A                |
+
+> 🔧 **Upgrade path:** The planned **1200 kV / 40 A** combination trades
+> top-end wheel speed for higher torque efficiency and lighter electronics —
+> tuned for sustained pushing rather than raw speed.
+
+### Weapon
+IRONBRICK's "weapon" is its **reinforced front wedge**: a low-sweep, angled
+blade that gets under opponents and lifts their wheels for positional control.
+The wedge geometry is optimized for **steel arena floors**, and is re-torqued
+at every event to keep engagement angle consistent.
+
+---
+
+## 🛠️ Assembly Guide
+
+### 1. Chassis Preparation
+1. Install the front wedge using **M4 bolts**.
+2. Mount side panels and check alignment.
+3. Add the top plate **last** for easy internal access.
+
+### 2. Drivetrain Installation
+1. Mount the drive motor securely; apply **thread-locker**.
+2. Align pulleys and tension the GT2 belts.
+3. Install wheels and verify free rotation.
+
+### 3. Electronics Setup
+1. Mount ESCs with **foam tape** for shock absorption.
+2. Route motor wires cleanly along chassis walls.
+3. Keep the receiver away from high-current lines.
+4. Connect: **battery → PD board → ESCs → motors**.
+
+### 4. Final Checks
+- [ ] Verify belt tension
+- [ ] Confirm correct motor direction
+- [ ] Test radio failsafe
+- [ ] Inspect all fasteners
+
+---
+
+## 🧪 Testing & Calibration
+
+1. **No-load spin-up** — confirm smooth motor ramp with wheels off the ground.
+2. **Steering response** — check left/right trim center and full-lock turns.
+3. **Wedge engagement** — test on a flat surface; wedge should lift, not bounce.
+4. **Thermal soak** — 1–2 minute drive test to confirm ESC and motor
+   temperatures stay within limits.
+
+---
+
+## 🔧 Maintenance
+
+- **Inspect belts** after every match — replace at the first sign of fraying
+- **Re-tighten all screws**, especially the wedge bolts
+- **Check motor bearings** for debris and re-grease as needed
+- **Replace wheels** when worn to maintain consistent traction
+- **Battery care** — keep 3S LiPos balanced and store them safely
+
+---
+
+## 📦 Bill of Materials (BOM)
+
+| Component      | Specification                 |
+| -------------- | ----------------------------- |
+| Drive motor    | D3536 class brushless 1450 kV |
+| Drive ESC      | 80 A brushless                |
+| Battery        | 3S LiPo 450–850 mAh           |
+| Wheels         | 3–4 in rubber / foam          |
+| Belts          | GT2 reinforced timing belt    |
+| Chassis        | 6061-T6 Al + polycarbonate    |
+| Connectors     | XT30                          |
+| Receiver       | FS2A / ELRS / DSMX            |
+| Fasteners      | M3 / M4 stainless steel       |
+
+> Full BOM with part numbers and links: **[add file: bom.xlsx / parts/]**.
+
+---
+
+## 🏁 Battle Record
+
+| Date        | Event                    | Opponent          | Result | Notes       |
+| ----------- | ------------------------ | ----------------- | ------ | ----------- |
+| [YYYY-MM-DD] | [Event name / location] | [Opponent]        | [W/L]  | [Highlight] |
+| [YYYY-MM-DD] | [Event name / location] | [Opponent]        | [W/L]  | [Highlight] |
+
+---
+
+## 🧭 Competition Notes
+
+- Designed for the **3 lb (1.36 kg) beetleweight** class
+- Complies with standard safety rules: **removable link** and **LiPo protection**
+- Wedge geometry optimized for **steel arena floors**
+- Drive tuned for **high-traction pushing matches**
+
+---
+
+## 🚀 Upgrade Roadmap
+
+- [x] Belt-driven dual-wheel drivetrain
+- [x] Brushless D3536 · 1450 kV drive
+- [ ] **D3536 · 1200 kV + 40 A ESC** — more torque-efficient, lighter electronics
+- [ ] **Hardened AR500 steel wedge** — more bite and durability
+- [ ] **Gyro-assisted driving** — stability under self-righting hits
+- [ ] **Quick-swap battery bay** — faster pit stops
+
+---
+
+## 📚 Build Files
+
+| Path        | Description                                |
+| ----------- | ------------------------------------------ |
+| `cad/`      | [CAD source (Fusion 360 / Onshape / STEP)] |
+| `drawings/` | [Dimensioned drawings, DXF cut files]      |
+| `parts/`    | [BOM spreadsheet / order links]            |
+| `images/`   | Build & media photos                       |
+
+---
+
+## ⚠️ Safety & Rules Compliance
+
+- **Removable link** — power can be broken instantly from outside the arena
+- **Hard-cased / secured LiPo** — battery strapped or pocketed securely
+- **E-stop** — external power switch for immediate power-down
+- Always verify against the **current SPARC / NHRL / event ruleset** before
+  competing.
+
+---
+
+## 🙏 Credits
+
+IRONBRICK built and driven by **[Your name / Team]**. [Sponsors / clubs /
+acknowledgements.]
+
+## 📄 License
+
+[License type] — see the [LICENSE](LICENSE) file for details.
+
+---
+
+_README maintained with the IRONBRICK build. Last updated: September 2026._
