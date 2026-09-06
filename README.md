@@ -8,10 +8,10 @@
 
 # RONIN
 
-### 3 lb (1.36 kg) Beetleweight Combat Robot — Belt-Driven Wedge
+### 3 lb (1.36 kg) Beetleweight Combat Robot — Horizontal Spinner
 
 [![Class](https://img.shields.io/badge/Class-3%20lb%20%7C%201.36%20kg-blue)](#)
-[![Config](https://img.shields.io/badge/Config-Belt--Driven%20Wedge-orange)](#)
+[![Config](https://img.shields.io/badge/Config-Horizontal%20Spinner-orange)](#)
 [![Status](https://img.shields.io/badge/Status-Competition%20Ready-green)](#)
 [![License](https://img.shields.io/badge/License-All%20rights%20reserved-lightgray)](#)
 
@@ -21,24 +21,25 @@
 
 ##  Overview
 
-<img src="images/robot_hero.jpg" alt="RONIN — belt-driven 3 lb wedge robot" width="600"/>
+<img src="images/robot_hero.jpg" alt="RONIN — 3 lb horizontal spinner robot" width="600"/>
 
 > _A compact, belt-driven 3 lb combat robot engineered for durability, ease of
-> maintenance, and consistent performance in high-impact matches. RONIN's
-> architecture focuses on robust drive power, efficient energy distribution,
-> and a reinforced front wedge built for pushing, deflecting, and controlling
-> opponents._
+> maintenance, and consistent performance in high-impact matches. RONIN pairs a
+> high-energy horizontal spinner with a reinforced front wedge: robust drive
+> power, efficient energy distribution, and a pointed front end built for
+> pushing, deflecting, and controlling opponents._
 
 Built for the **3 lb (1.36 kg) beetleweight class**, RONIN is designed to be
 **serviceable between matches** — a modular two-piece frame with clean wiring
 and a lightweight multi-material build (printed PETG / TPU 95A frame with a
-7075 aluminum wedge) that keeps repair times short and combat performance
-consistent.
+7075-T6 aluminum spinner bar) that keeps repair times short and combat
+performance consistent.
 
 ---
 
 ##  Key Features
 
+- **Horizontal spinner weapon** — 7075-T6 bar, brushless motor + 80 A ESC
 - **Reinforced front wedge** — aggressive pushing, deflection, and positional control
 - **Belt-driven dual-wheel drivetrain** — smooth, high-traction torque delivery
 - **Modular 2-piece chassis** — fast repairs between matches
@@ -80,11 +81,21 @@ consistent.
 | Power distribution| DartPCB (Just 'Cuz)                |
 | Safety            | External power switch + removable link |
 
+### ⚔️ Weapon System
+| Item        | Specification                          |
+| ----------- | -------------------------------------- |
+| Type        | Horizontal spinner (bar)               |
+| Weapon bar  | **7075-T6 aluminum**                   |
+| Motor       | D3536 brushless · **1450 kV** (current)|
+| ESC         | **80 A** brushless (current)           |
+| Upgrade     | D3536 · 1200 kV + 40 A ESC (planned)   |
+
 ###  Electronics
 | Item               | Specification                      |
 | ------------------ | ---------------------------------- |
 | Mainboard          | **Just 'Cuz Motherboard V4** (Just 'Cuz Robotics) |
 | Drive ESC          | **WEKA 20A** Dual Brushed Motor Controller |
+| Weapon ESC         | **80 A** brushless                       |
 | Receiver           | **FS2A** — AFHDS-2A protocol       |
 | Voltage regulation | 5 V BEC for receiver               |
 | Telemetry          | LED status indicator               |
@@ -95,16 +106,16 @@ consistent.
 ##  Design & Engineering
 
 ### Design Philosophy
-RONIN is a **pushing-and-control robot**. Instead of chasing high-energy
-weapon hits, it wins through sustained aggression: getting its wedge under
-opponents, driving them into hazards, and disrupting their weapon mounts and
-drive chains. That philosophy drives three decisions:
+RONIN is a **horizontal spinner with a control-game edge**. The 7075-T6 bar
+delivers high-energy impacts that batter wedges, wheel mounts, and armor,
+while the reinforced front wedge lets RONIN push and control opponents when the
+weapon is spooled down. That philosophy drives three decisions:
 
-- **Strength over speed** — a belt-driven, high-torque drivetrain delivers
-  smooth, controllable pushing power in every match
-- **Serviceability** — everything that commonly breaks (belts, wheels, wedge,
-  ESC) is reachable within minutes between fights
-- **Efficient weight budget** — the wedge, chassis, and drive get the weight;
+- **Energy + control** — a high-energy weapon bar backed by a strong,
+  belt-driven drivetrain that can out-push and out-position most opponents
+- **Serviceability** — everything that commonly breaks (belts, wheels, weapon
+  bar, drive ESC) is reachable within minutes between fights
+- **Efficient weight budget** — the weapon, chassis, and drive get the weight;
   the electronics bay stays tight and clean
 
 ### Drivetrain
@@ -122,20 +133,29 @@ torque for pushing matches.
 > no-load top speed. Accounting for battery sag, friction, and belt losses, a
 > realistic figure is ~2.6 m/s (9.4 km/h · 5.9 mph).
 
-| Config      | Drive                                   | Electronics                          |
-| ----------- | --------------------------------------- | ------------------------------------ |
-| **Current** | 2× DartBox V2 Drive (VIPER) + S3M belts | WEKA 20A dual ESC · JCMB V4 · FS2A  |
-| **Planned** | Brushless D3536 drivetrain              | 1200 kV motor + 40 A ESC            |
-
-> 🔧 **Upgrade path:** For higher acceleration, RONIN can swap to a
-> **brushless D3536** drivetrain (e.g., 1200 kV with a 40 A ESC) — trading some
-> low-end simplicity for faster wheel speed and lighter electronics.
+| Drivetrain       | Electronics                          |
+| ---------------- | ------------------------------------ |
+| 2× DartBox V2 Drive (VIPER) + S3M belts | WEKA 20A dual ESC · JCMB V4 · FS2A |
 
 ### Weapon
-RONIN's "weapon" is its **reinforced 7075-T6 aluminum front wedge**: a
-low-sweep, angled blade that gets under opponents and lifts their wheels for
-positional control. The wedge geometry is optimized for **steel arena floors**,
-and is re-torqued at every event to keep engagement angle consistent.
+RONIN's primary weapon is a **horizontal spinner bar** machined from
+**7075-T6 aluminum**, spinning around a horizontal axis and powered by a
+**D3536 brushless motor (1450 kV)** with an **80 A ESC**. The bar delivers
+high-energy impacts that batter wedges, wheel mounts, and unprotected chassis.
+
+A reinforced **front wedge** — a low-sweep, angled blade — tucks under
+opponents for pushing and positional control when the weapon is down. Wedge
+geometry is optimized for **steel arena floors**, and is re-torqued at every
+event to keep engagement angle consistent.
+
+| Weapon config | Bar      | Motor                 | ESC    |
+| ------------- | -------- | --------------------- | ------ |
+| **Current**   | 7075-T6  | D3536 · 1450 kV       | 80 A   |
+| **Planned**   | 7075-T6  | D3536 · 1200 kV       | 40 A   |
+
+> 🔧 **Upgrade path:** The planned **D3536 · 1200 kV / 40 A** combination
+> lightens the weapon sub-assembly and improves efficiency — trading a little
+> top-end weapon speed for a smaller, simpler drive package.
 
 ### Chassis & Manufacturing
 RONIN's modular frame is **3D printed on a Bambu Lab A1 Mini** in **PETG** for
@@ -196,23 +216,25 @@ reduces part count, and makes it fast to reprint spare parts between events.
 | Component      | Specification                            | Source / Link                                   |
 | -------------- | ---------------------------------------- | ----------------------------------------------- |
 | Drive motor    | 2× DartBox V2 Drive · VIPER 22 mm        | [🔗 DartBox Drive](https://justcuzrobotics.com/products/dartbox-squared-drive) |
+| Weapon motor   | D3536 brushless · 1450 kV (current)      | [🔗 Buy / info](https://your-link.example/weapon-motor) |
+| Weapon ESC     | 80 A brushless (current)                 | [🛒 AliExpress](https://www.aliexpress.com/item/1005007737723912.html) |
 | Drive ESC      | WEKA 20A Dual Brushed Motor Controller   | [🔗 WEKA 20A](https://justcuzrobotics.com/products/weka-dual-20-esc-for-brushed-drive) |
 | Mainboard      | Just 'Cuz Motherboard V4                 | [🔗 Motherboard V4](https://justcuzrobotics.com/products/motherboard) |
 | Power dist.    | DartPCB (Just 'Cuz)                      | [🔗 DartPCB](https://justcuzrobotics.com/products/dartpcb) |
-| Receiver       | FS2A (AFHDS-2A protocol)                 | [🔗 Buy / info](https://your-link.example/fs2a) |
+| Receiver       | FS2A (AFHDS-2A protocol)                 | [🛒 AliExpress](https://www.aliexpress.com/item/1005006913201646.html) |
 | Battery        | Tattu 3S LiPo · 450 mAh · 75C            | [🔗 Buy / info](https://your-link.example/tattu-3s) |
 | Wheels         | 43 mm rubber / foam                      | [🔗 Buy / info](https://your-link.example/wheels-43mm) |
 | Belts          | S3M timing belt · 74 teeth · 4 mm        | [🔗 S3M 74T Belt](https://justcuzrobotics.com/products/s3m-timing-belt-74t-4mm-wide-used-in-ssp-kits) |
-| Weapon (wedge) | 7075-T6 aluminum                         | [🔗 Buy / info](https://your-link.example/7075-wedge) |
+| Weapon bar     | 7075-T6 aluminum (horizontal spinner)    | [🔗 Buy / info](https://your-link.example/7075-bar) |
 | Chassis        | PETG + TPU 95A (Bambu Lab A1 Mini print) | [🔗 Print settings](https://your-link.example/print-file) |
 | Connectors     | XT30                                     | [🔗 Buy / info](https://your-link.example/xt30) |
 | Transmitter    | FlySky FS-i6 (AFHDS-2A)                  | [🔗 Buy / info](https://your-link.example/fs-i6) |
 | Fasteners      | M3 / M4 stainless steel                  | [🔗 Buy / info](https://your-link.example/fasteners) |
 
-> 🔗 **Sources:** The drive motor, ESC, mainboard, power-distribution board, and
-> belt rows have live links to Just 'Cuz Robotics. The remaining
-> `your-link.example` entries are placeholders — swap in the real store / CAD /
-> print-files URLs when you have them.
+> 🔗 **Sources:** Live links for the DartBox drive, WEKA 20A, Motherboard V4,
+> DartPCB, and S3M belt (Just 'Cuz), plus the weapon ESC and FS2A receiver
+> (AliExpress). The remaining `your-link.example` entries are placeholders —
+> swap in the real store / CAD / print-files URLs when you have them.
 
 > Full BOM with part numbers and links: **[add file: bom.xlsx / parts/]**.
 
@@ -238,9 +260,10 @@ reduces part count, and makes it fast to reprint spare parts between events.
 
 ##  Upgrade Roadmap
 
+- [x] Horizontal spinner weapon — 7075-T6 bar + D3536 (1450 kV) + 80 A ESC
 - [x] Belt-driven dual-wheel drivetrain
 - [x] Brushed drive + WEKA 20A dual ESC (JCMB V4 / FS2A)
-- [ ] **Brushless drive upgrade** — D3536 · 1200 kV + 40 A ESC for higher acceleration
+- [ ] **Weapon upgrade** — D3536 · 1200 kV + 40 A ESC (lighter, more efficient)
 - [ ] **Hardened AR500 steel wedge** — more bite and durability
 - [ ] **Gyro-assisted driving** — stability under self-righting hits
 - [ ] **Quick-swap battery bay** — faster pit stops
