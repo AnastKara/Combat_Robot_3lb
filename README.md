@@ -216,20 +216,22 @@ reduces part count, and makes it fast to reprint spare parts between events.
 | Component      | Specification                            | Source / Link                                   |
 | -------------- | ---------------------------------------- | ----------------------------------------------- |
 | Drive motor    | 2× DartBox V2 Drive · VIPER 22 mm        | [🔗 DartBox Drive](https://justcuzrobotics.com/products/dartbox-squared-drive) |
-| Weapon motor   | D3536 brushless · 1450 kV (current)      | [🔗 Buy / info](https://your-link.example/weapon-motor) |
+| Weapon motor   | D3536 brushless · 1450 kV (current)      | [🛒 AliExpress](https://www.aliexpress.com/item/1005005039009992.html) |
 | Weapon ESC     | 80 A brushless (current)                 | [🛒 AliExpress](https://www.aliexpress.com/item/1005007737723912.html) |
 | Drive ESC      | WEKA 20A Dual Brushed Motor Controller   | [🔗 WEKA 20A](https://justcuzrobotics.com/products/weka-dual-20-esc-for-brushed-drive) |
 | Mainboard      | Just 'Cuz Motherboard V4                 | [🔗 Motherboard V4](https://justcuzrobotics.com/products/motherboard) |
 | Power dist.    | DartPCB (Just 'Cuz)                      | [🔗 DartPCB](https://justcuzrobotics.com/products/dartpcb) |
 | Receiver       | FS2A (AFHDS-2A protocol)                 | [🛒 AliExpress](https://www.aliexpress.com/item/1005006913201646.html) |
-| Battery        | Tattu 3S LiPo · 450 mAh · 75C            | [🔗 Buy / info](https://your-link.example/tattu-3s) |
+| Battery        | Tattu 3S LiPo · 450 mAh · 75C            | [🛒 AliExpress](https://www.aliexpress.com/item/1005011861263060.html) |
 | Wheels         | 43 mm rubber / foam                      | [🔗 Buy / info](https://your-link.example/wheels-43mm) |
 | Belts          | S3M timing belt · 74 teeth · 4 mm        | [🔗 S3M 74T Belt](https://justcuzrobotics.com/products/s3m-timing-belt-74t-4mm-wide-used-in-ssp-kits) |
-| Weapon bar     | 7075-T6 aluminum (horizontal spinner)    | [🔗 Buy / info](https://your-link.example/7075-bar) |
+| Weapon pulley  | S3M pulley · 3M-222 · 10 mm width       | [🛒 AliExpress](https://www.aliexpress.com/item/1005005935127676.html) |
+| Weapon bar     | 7075-T6 aluminum (horizontal spinner)    | [🔗 CNC (JLC)](https://jlccnc.com/cnc-machining-quote) |
+| Weapon shaft   | M8 × 160 mm                      | [🛒 AliExpress](https://www.aliexpress.com/item/1005009038148842.html) |
 | Chassis        | PETG + TPU 95A (Bambu Lab A1 Mini print) | [🔗 Print settings](https://your-link.example/print-file) |
 | Connectors     | XT30                                     | [🔗 Buy / info](https://your-link.example/xt30) |
-| Transmitter    | FlySky FS-i6 (AFHDS-2A)                  | [🔗 Buy / info](https://your-link.example/fs-i6) |
-| Fasteners      | M3 / M4 stainless steel                  | [🔗 Buy / info](https://your-link.example/fasteners) |
+| Transmitter    | FlySky FS-i6 (AFHDS-2A)                  | [🛒 AliExpress](https://www.aliexpress.com/item/1005005910087379.html) |
+| Fasteners      | M3 screws · 304 stainless steel (M3 × 10 mm) | [🛒 AliExpress](https://www.aliexpress.com/item/1005004861140396.html) |
 
 > 🔗 **Sources:** Live links for the DartBox drive, WEKA 20A, Motherboard V4,
 > DartPCB, and S3M belt (Just 'Cuz), plus the weapon ESC and FS2A receiver
