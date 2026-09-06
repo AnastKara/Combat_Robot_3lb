@@ -23,7 +23,11 @@
 
 ##  Overview
 
-<img src="images/robot_photo.jpg" alt="RONIN v1 — 3 lb horizontal spinner robot" width="600"/>
+<div align="center">
+
+<img src="images/robot_photo.jpg" alt="RONIN v1 — 3 lb horizontal spinner robot" width="460"/>
+
+</div>
 
 > _A compact, belt-driven 3 lb combat robot engineered for durability, ease of
 > maintenance, and consistent performance in high-impact matches. RONIN pairs a

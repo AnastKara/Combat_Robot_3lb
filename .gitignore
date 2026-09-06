@@ -1,0 +1,7 @@
+# Large video files - keep locally, don't track in repo
+images/*.MOV
+images/*.mov
+images/*.mp4
+
+# Frame extraction scratch directory
+images/_frames/
