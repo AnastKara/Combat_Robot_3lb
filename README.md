@@ -230,9 +230,9 @@ reduces part count, and makes it fast to reprint spare parts between events.
 | Weapon shaft   | M8 × 160 mm (1 pc)                      | [🛒 AliExpress](https://www.aliexpress.com/item/1005009038148842.html) |
 | Weapon nut     | M8 nut (for weapon shaft)               | [🛒 AliExpress](https://www.aliexpress.com/item/1005011858105441.html) |
 | Chassis        | PETG + TPU 95A (Bambu Lab A1 Mini print) | [🔗 Print settings](https://your-link.example/print-file) |
-| Connectors     | XT30                                     | [🔗 Buy / info](https://your-link.example/xt30) |
+| Connectors     | XT30                                     | [🛒 AliExpress](https://www.aliexpress.com/item/1005005547982922.html) |
 | Transmitter    | FlySky FS-i6 (AFHDS-2A)                  | [🛒 AliExpress](https://www.aliexpress.com/item/1005005910087379.html) |
-| Fasteners      | M3 screws · 304 stainless steel (M3 × 10 mm) | [🛒 AliExpress](https://www.aliexpress.com/item/1005004861140396.html) |
+| Fasteners      | M3 screw kit · 304 SS · brass thread inserts (M3 × 10 mm) | [🛒 M3 Kit](https://www.aliexpress.com/item/1005007299422418.html) · [🛒 M3 304 SS](https://www.aliexpress.com/item/1005004861140396.html) · [🛒 Brass Inserts](https://www.aliexpress.com/item/1005006472962973.html) |
 
 > 🔗 **Sources:** Live links for the DartBox drive, WEKA 20A, Motherboard V4,
 > DartPCB, and S3M belt (Just 'Cuz), plus the weapon ESC and FS2A receiver
