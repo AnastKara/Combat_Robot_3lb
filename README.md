@@ -246,12 +246,7 @@ reduces part count, and makes it fast to reprint spare parts between events.
 | Transmitter    | FlySky FS-i6 (AFHDS-2A)                  | [🛒 AliExpress](https://www.aliexpress.com/item/1005005910087379.html) |
 | Fasteners      | M3 screw kit · 304 SS · brass thread inserts (M3 × 10 mm) | [🛒 M3 Kit](https://www.aliexpress.com/item/1005007299422418.html) · [🛒 M3 304 SS](https://www.aliexpress.com/item/1005004861140396.html) · [🛒 Brass Inserts](https://www.aliexpress.com/item/1005006472962973.html) |
 
->  **Sources:** Live links for the DartBox drive, WEKA 20A, Motherboard V4,
-> DartPCB, and S3M belt (Just 'Cuz), plus the weapon ESC and FS2A receiver
-> (AliExpress). The remaining `your-link.example` entries are placeholders —
-> swap in the real store / CAD / print-files URLs when you have them.
-
-> Full BOM with part numbers and links: **[add file: bom.xlsx / parts/]**.
+>  **Sources:** Live links from (AliExpress) and (Just Cuz Robotics).
 
 ---
 
@@ -305,7 +300,7 @@ Planned for **v2**:
 
 | Path        | Description                                |
 | ----------- | ------------------------------------------ |
-| `cad/`      | [CAD source (Fusion 360 / Onshape / STEP)] |
+| `cad/`      | [CAD source (Fusion 360 / STEP)] |
 | `drawings/` | [Dimensioned drawings, DXF cut files]      |
 | `parts/`    | [Order links]            |
 | `images/`   | Build & media photos                       |
