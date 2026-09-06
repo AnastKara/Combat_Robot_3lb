@@ -302,7 +302,7 @@ Planned for **v2**:
 | ----------- | ------------------------------------------ |
 | `cad/`      | [CAD source (Fusion 360 / Onshape / STEP)] |
 | `drawings/` | [Dimensioned drawings, DXF cut files]      |
-| `parts/`    | [BOM spreadsheet / order links]            |
+| `parts/`    | [Order links]            |
 | `images/`   | Build & media photos                       |
 
 ---
