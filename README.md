@@ -101,7 +101,7 @@ two knockout wins en route to the podium in the 3 lb knockout bracket.
 
 <a id="weapon-system"></a>
 
-### ⚔️ Weapon System
+###  Weapon System
 | Item        | Specification                          |
 | ----------- | -------------------------------------- |
 | Type        | Horizontal spinner (bar)               |
@@ -148,7 +148,7 @@ the motors and drivetrain during impacts — a key reliability win over direct
 chain-drive setups — while the WEKA dual ESC delivers smooth, high-traction
 torque for pushing matches.
 
-> 📐 **Top-speed estimate:** Based on the DartBox V2 Drive output (1550 RPM @ 3S)
+>  **Top-speed estimate:** Based on the DartBox V2 Drive output (1550 RPM @ 3S)
 > and 43 mm wheels, RONIN reaches ~3.5 m/s (12.6 km/h · 7.8 mph) theoretical
 > no-load top speed. Accounting for battery sag, friction, and belt losses, a
 > realistic figure is ~2.6 m/s (9.4 km/h · 5.9 mph).
