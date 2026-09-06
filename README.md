@@ -13,6 +13,7 @@
 [![Class](https://img.shields.io/badge/Class-3%20lb%20%7C%201.36%20kg-blue)](#)
 [![Config](https://img.shields.io/badge/Config-Horizontal%20Spinner-orange)](#)
 [![Status](https://img.shields.io/badge/Status-Competition%20Ready-green)](#)
+[![MRC 2026](https://img.shields.io/badge/MRC%202026-2nd%20Place-silver)](https://minoanrobotsports.gr/)
 [![License](https://img.shields.io/badge/License-All%20rights%20reserved-lightgray)](#)
 
 </div>
@@ -34,6 +35,9 @@ Built for the **3 lb (1.36 kg) beetleweight class**, RONIN is designed to be
 and a lightweight multi-material build (printed PETG / TPU 95A frame with a
 7075-T6 aluminum spinner bar) that keeps repair times short and combat
 performance consistent.
+
+🥈 **Debut result: 2nd place at [MRC 2026](https://minoanrobotsports.gr/)** —
+two knockout wins en route to the podium in the 3 lb knockout bracket.
 
 ---
 
@@ -245,10 +249,21 @@ reduces part count, and makes it fast to reprint spare parts between events.
 
 ##  Battle Record
 
-| Date        | Event                    | Opponent          | Result | Notes       |
-| ----------- | ------------------------ | ----------------- | ------ | ----------- |
-| [YYYY-MM-DD] | [Event name / location] | [Opponent]        | [W/L]  | [Highlight] |
-| [YYYY-MM-DD] | [Event name / location] | [Opponent]        | [W/L]  | [Highlight] |
+| Date       | Event                                        | Opponent  | Result | Notes              |
+| ---------- | -------------------------------------------- | --------- | ------ | ------------------ |
+| 2026-04-05 | [MRC](https://minoanrobotsports.gr/) (Minoan Robot Sports) | Instudies | Win | KO                  |
+| 2026-04-05 | [MRC](https://minoanrobotsports.gr/) (Minoan Robot Sports) | 404 NOT FOUND | Win | KO               |
+| 2026-04-05 | [MRC](https://minoanrobotsports.gr/) (Minoan Robot Sports) | BigHero 1 | Loss | Battery exploded    |
+
+> **Record: 2–1** — two wins (one by KO) and one loss at the same MRC event.
+
+### 🏆 Tournament Results
+
+| Event | Date | Placement |
+|---|---|---|
+| [MRC](https://minoanrobotsports.gr/) (Minoan Robot Sports) — 3 lb knockout bracket | 2026-04-05 | 🥈 **2nd Place** |
+
+> RONIN fought through the MRC knockout bracket to a **2nd-place finish** — dropping only the semifinal-style bout against BigHero 1 (battery failure) after two KO wins earlier in the day.
 
 ---
 
