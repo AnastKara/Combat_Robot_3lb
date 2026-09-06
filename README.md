@@ -1,12 +1,12 @@
 <!--
-  IRONBRICK — 3 lb Combat Robot README
+  RONNIN — 3 lb Combat Robot README
   Placeholders marked [LIKE THIS] are details only you know; fill them in or
   reply and I'll update them.
 -->
 
 <div align="center">
 
-# 🧱 IRONBRICK
+#  RONNIN
 
 ### 3 lb (1.36 kg) Beetleweight Combat Robot — Belt-Driven Wedge
 
@@ -19,24 +19,24 @@
 
 ---
 
-## 📸 Overview
+##  Overview
 
-<img src="images/robot_hero.jpg" alt="IRONBRICK — belt-driven 3 lb wedge robot" width="600"/>
+<img src="images/robot_hero.jpg" alt="RONNIN — belt-driven 3 lb wedge robot" width="600"/>
 
 > _A compact, belt-driven 3 lb combat robot engineered for durability, ease of
-> maintenance, and consistent performance in high-impact matches. IRONBRICK's
+> maintenance, and consistent performance in high-impact matches. RONNIN's
 > architecture focuses on robust drive power, efficient energy distribution,
 > and a reinforced front wedge built for pushing, deflecting, and controlling
 > opponents._
 
-Built for the **3 lb (1.36 kg) beetleweight class**, IRONBRICK is designed to be
+Built for the **3 lb (1.36 kg) beetleweight class**, RONNIN is designed to be
 **serviceable between matches** — a modular two-piece frame with clean wiring
 and a reinforced aluminum structure that keeps repair times short and combat
 performance consistent.
 
 ---
 
-## 🏆 Key Features
+##  Key Features
 
 - **Reinforced front wedge** — aggressive pushing, deflection, and positional control
 - **Belt-driven dual-wheel drivetrain** — smooth, high-traction torque delivery
@@ -47,9 +47,9 @@ performance consistent.
 
 ---
 
-## 📋 Technical Specifications
+##  Technical Specifications
 
-### 🧱 Chassis
+###  Chassis
 | Item         | Specification                         |
 | ------------ | ------------------------------------- |
 | Material     | 6061-T6 aluminum + polycarbonate top  |
@@ -58,7 +58,7 @@ performance consistent.
 | Dimensions   | 220 × 160 × 91 mm (8.7 × 6.3 × 3.6 in) |
 | Weight       | **1150 g (2.54 lb)** _(3.0 lb / 1.36 kg max)_ |
 
-### ⚙️ Drive System
+###  Drive System
 | Item        | Specification                          |
 | ----------- | -------------------------------------- |
 | Drive type  | Belt-driven dual-wheel                 |
@@ -66,11 +66,11 @@ performance consistent.
 | Drive ESC   | **WEKA 20A** Dual Brushed Motor Controller |
 | Mainboard   | **Just 'Cuz Motherboard V4** (Just 'Cuz Robotics) |
 | Receiver    | **FS2A** — AFHDS-2A protocol           |
-| Wheels      | 3–4 in rubber / foam                   |
+| Wheels      | 43 mm (1.7 in) rubber / foam          |
 | Belts       | **GT2 reinforced timing belts**        |
-| Top speed   | **[X mph / m·s⁻¹]**                     |
+| Top speed   | **~3.5 m/s (12.6 km/h · 7.8 mph)** theoretical · ~2.6 m/s (9.4 km/h) realistic |
 
-### 🔋 Power System
+###  Power System
 | Item              | Specification                     |
 | ----------------- | --------------------------------- |
 | Battery           | Tattu 3S LiPo · 11.1 V · 450 mAh · 75C |
@@ -78,7 +78,7 @@ performance consistent.
 | Power distribution| Custom micro-PD board             |
 | Safety            | External power switch + removable link |
 
-### 📡 Electronics
+###  Electronics
 | Item               | Specification                      |
 | ------------------ | ---------------------------------- |
 | Mainboard          | **Just 'Cuz Motherboard V4** (Just 'Cuz Robotics) |
@@ -90,10 +90,10 @@ performance consistent.
 
 ---
 
-## 🧱 Design & Engineering
+##  Design & Engineering
 
 ### Design Philosophy
-IRONBRICK is a **pushing-and-control robot**. Instead of chasing high-energy
+RONNIN is a **pushing-and-control robot**. Instead of chasing high-energy
 weapon hits, it wins through sustained aggression: getting its wedge under
 opponents, driving them into hazards, and disrupting their weapon mounts and
 drive chains. That philosophy drives three decisions:
@@ -110,29 +110,34 @@ Two **DartBox V2 Drive gearmotors (VIPER model, 22 mm)** turn both wheels throug
 **GT2 reinforced timing belts**, powered by the **WEKA 20A Dual Brushed Motor
 Controller** and managed by the **Just 'Cuz Motherboard V4** mainboard. The
 DartBox V2 motors are lightweight and ultra-powerful for their size, giving
-IRONBRICK a strong power-to-weight ratio. Belt drive reduces shock loading on
+RONNIN a strong power-to-weight ratio. Belt drive reduces shock loading on
 the motors and drivetrain during impacts — a key reliability win over direct
 chain-drive setups — while the WEKA dual ESC delivers smooth, high-traction
 torque for pushing matches.
+
+> 📐 **Top-speed estimate:** Based on the DartBox V2 Drive output (1550 RPM @ 3S)
+> and 43 mm wheels, RONNIN reaches ~3.5 m/s (12.6 km/h · 7.8 mph) theoretical
+> no-load top speed. Accounting for battery sag, friction, and belt losses, a
+> realistic figure is ~2.6 m/s (9.4 km/h · 5.9 mph).
 
 | Config      | Drive                                   | Electronics                          |
 | ----------- | --------------------------------------- | ------------------------------------ |
 | **Current** | 2× DartBox V2 Drive (VIPER) + GT2 belts | WEKA 20A dual ESC · JCMB V4 · FS2A  |
 | **Planned** | Brushless D3536 drivetrain              | 1200 kV motor + 40 A ESC            |
 
-> 🔧 **Upgrade path:** For higher acceleration, IRONBRICK can swap to a
+> 🔧 **Upgrade path:** For higher acceleration, RONNIN can swap to a
 > **brushless D3536** drivetrain (e.g., 1200 kV with a 40 A ESC) — trading some
 > low-end simplicity for faster wheel speed and lighter electronics.
 
 ### Weapon
-IRONBRICK's "weapon" is its **reinforced front wedge**: a low-sweep, angled
+RONNIN's "weapon" is its **reinforced front wedge**: a low-sweep, angled
 blade that gets under opponents and lifts their wheels for positional control.
 The wedge geometry is optimized for **steel arena floors**, and is re-torqued
 at every event to keep engagement angle consistent.
 
 ---
 
-## 🛠️ Assembly Guide
+##  Assembly Guide
 
 ### 1. Chassis Preparation
 1. Install the front wedge using **M4 bolts**.
@@ -158,7 +163,7 @@ at every event to keep engagement angle consistent.
 
 ---
 
-## 🧪 Testing & Calibration
+##  Testing & Calibration
 
 1. **No-load spin-up** — confirm smooth motor ramp with wheels off the ground.
 2. **Steering response** — check left/right trim center and full-lock turns.
@@ -168,7 +173,7 @@ at every event to keep engagement angle consistent.
 
 ---
 
-## 🔧 Maintenance
+##  Maintenance
 
 - **Inspect belts** after every match — replace at the first sign of fraying
 - **Re-tighten all screws**, especially the wedge bolts
@@ -178,7 +183,7 @@ at every event to keep engagement angle consistent.
 
 ---
 
-## 📦 Bill of Materials (BOM)
+##  Bill of Materials (BOM)
 
 | Component      | Specification                            |
 | -------------- | ---------------------------------------- |
@@ -187,7 +192,7 @@ at every event to keep engagement angle consistent.
 | Mainboard      | Just 'Cuz Motherboard V4                 |
 | Receiver       | FS2A (AFHDS-2A protocol)                 |
 | Battery        | Tattu 3S LiPo · 450 mAh · 75C            |
-| Wheels         | 3–4 in rubber / foam                     |
+| Wheels         | 43 mm rubber / foam                        |
 | Belts          | GT2 reinforced timing belts              |
 | Chassis        | 6061-T6 Al + polycarbonate               |
 | Connectors     | XT30                                     |
@@ -198,7 +203,7 @@ at every event to keep engagement angle consistent.
 
 ---
 
-## 🏁 Battle Record
+##  Battle Record
 
 | Date        | Event                    | Opponent          | Result | Notes       |
 | ----------- | ------------------------ | ----------------- | ------ | ----------- |
@@ -207,7 +212,7 @@ at every event to keep engagement angle consistent.
 
 ---
 
-## 🧭 Competition Notes
+##  Competition Notes
 
 - Designed for the **3 lb (1.36 kg) beetleweight** class
 - Complies with standard safety rules: **removable link** and **LiPo protection**
@@ -216,7 +221,7 @@ at every event to keep engagement angle consistent.
 
 ---
 
-## 🚀 Upgrade Roadmap
+##  Upgrade Roadmap
 
 - [x] Belt-driven dual-wheel drivetrain
 - [x] Brushed drive + WEKA 20A dual ESC (JCMB V4 / FS2A)
@@ -227,7 +232,7 @@ at every event to keep engagement angle consistent.
 
 ---
 
-## 📚 Build Files
+##  Build Files
 
 | Path        | Description                                |
 | ----------- | ------------------------------------------ |
@@ -238,7 +243,7 @@ at every event to keep engagement angle consistent.
 
 ---
 
-## ⚠️ Safety & Rules Compliance
+##  Safety & Rules Compliance
 
 - **Removable link** — power can be broken instantly from outside the arena
 - **Hard-cased / secured LiPo** — battery strapped or pocketed securely
@@ -248,14 +253,14 @@ at every event to keep engagement angle consistent.
 
 ---
 
-## 🙏 Credits
+##  Credits
 
-IRONBRICK was designed, built, and driven by **Anastasis Karaivazoglou** as part
+RONNIN was designed, built, and driven by **Anastasis Karaivazoglou** as part
 of the **IRONBRICK | Fibran** team.
 
 Special thanks to our sponsors **Fibran** and **JLC** for their support of the build.
 
-## 📄 License
+##  License
 
 **All rights reserved.** © [2026] Anastasis Karaivazoglou / IRONBRICK | Fibran.
 
@@ -266,4 +271,4 @@ Sponsors: **Fibran** and **JLC**.
 
 ---
 
-_README maintained with the IRONBRICK build. Last updated: September 2026._
+_README maintained with the RONNIN build. Last updated: September 2026._
