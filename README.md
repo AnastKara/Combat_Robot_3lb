@@ -312,21 +312,21 @@ Planned for **v2**:
 
 All CAD is provided as **STEP** files (universal — open in Fusion 360, SolidWorks, Onshape, FreeCAD…), plus the complete robot as a native **Fusion 360 archive (`.f3z`)**.
 
-### 🤖 Full Assembly — `Ronin_V1/Robot/`
+###  Full Assembly — `Ronin_V1/Robot/`
 
 | File | Description | Size |
 |---|---|---|
 | [`ronin_V1.f3z`](Ronin_V1/Robot/ronin_V1.f3z) | Complete robot — native Fusion 360 archive (all sketches, bodies & joints) | ~20 MB |
 | [`ronin_V1.step`](Ronin_V1/Robot/ronin_V1.step) | Complete robot — universal STEP assembly | ~15 MB |
 
-### ⚙️ Machined Parts — `Ronin_V1/Parts/Machined_Parts/` (7075-T6 aluminum)
+###  Machined Parts — `Ronin_V1/Parts/Machined_Parts/` (7075-T6 aluminum)
 
 | Part | File |
 |---|---|
 | Horizontal spinner bar | [`Horizontal_Spinner.step`](Ronin_V1/Parts/Machined_Parts/Horizontal_Spinner.step) |
 | Fork | [`Fork.step`](Ronin_V1/Parts/Machined_Parts/Fork.step) |
 
-### 🖨️ PETG Parts — `Ronin_V1/Parts/PETG_Parts/` (structural frame · Bambu Lab A1 Mini)
+###  PETG Parts — `Ronin_V1/Parts/PETG_Parts/` (structural frame · Bambu Lab A1 Mini)
 
 | Part | File |
 |---|---|
@@ -341,7 +341,7 @@ All CAD is provided as **STEP** files (universal — open in Fusion 360, SolidWo
 | Motor mount (variant 2) | [`Motor_Mount_2.step`](Ronin_V1/Parts/PETG_Parts/Motor_Mount_2.step) |
 | Shaft spacer | [`Shaft_Spacer.step`](Ronin_V1/Parts/PETG_Parts/Shaft_Spacer.step) |
 
-### 🧽 TPU Parts — `Ronin_V1/Parts/TPU_Parts/` (flexible / shock-absorbing · Bambu Lab A1 Mini)
+###  TPU Parts — `Ronin_V1/Parts/TPU_Parts/` (flexible / shock-absorbing · Bambu Lab A1 Mini)
 
 | Part | File |
 |---|---|
@@ -349,10 +349,6 @@ All CAD is provided as **STEP** files (universal — open in Fusion 360, SolidWo
 | Small weapon pulley | [`Small_Weapon_Pulley.step`](Ronin_V1/Parts/TPU_Parts/Small_Weapon_Pulley.step) |
 | Left outer wing | [`Left_Outer_Wing.step`](Ronin_V1/Parts/TPU_Parts/Left_Outer_Wing.step) |
 | Right outer wing | [`Right_Outer_Wing.step`](Ronin_V1/Parts/TPU_Parts/Right_Outer_Wing.step) |
-
-### 📷 Media — `images/`
-
-Build & battle photos (see [Overview](#overview) for the hero shots).
 
 ---
 
