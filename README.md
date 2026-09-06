@@ -227,7 +227,8 @@ reduces part count, and makes it fast to reprint spare parts between events.
 | Belts          | S3M timing belt · 74 teeth · 4 mm        | [🔗 S3M 74T Belt](https://justcuzrobotics.com/products/s3m-timing-belt-74t-4mm-wide-used-in-ssp-kits) |
 | Weapon pulley  | S3M pulley · 3M-222 · 10 mm width       | [🛒 AliExpress](https://www.aliexpress.com/item/1005005935127676.html) |
 | Weapon bar     | 7075-T6 aluminum (horizontal spinner)    | [🔗 CNC (JLC)](https://jlccnc.com/cnc-machining-quote) |
-| Weapon shaft   | M8 × 160 mm                      | [🛒 AliExpress](https://www.aliexpress.com/item/1005009038148842.html) |
+| Weapon shaft   | M8 × 160 mm (1 pc)                      | [🛒 AliExpress](https://www.aliexpress.com/item/1005009038148842.html) |
+| Weapon nut     | M8 nut (for weapon shaft)               | [🛒 AliExpress](https://www.aliexpress.com/item/1005011858105441.html) |
 | Chassis        | PETG + TPU 95A (Bambu Lab A1 Mini print) | [🔗 Print settings](https://your-link.example/print-file) |
 | Connectors     | XT30                                     | [🔗 Buy / info](https://your-link.example/xt30) |
 | Transmitter    | FlySky FS-i6 (AFHDS-2A)                  | [🛒 AliExpress](https://www.aliexpress.com/item/1005005910087379.html) |
