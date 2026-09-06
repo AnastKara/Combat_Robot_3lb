@@ -25,7 +25,8 @@
 
 <div align="center">
 
-<img src="images/robot_photo.jpg" alt="RONIN v1 — 3 lb horizontal spinner robot" width="460"/>
+<img src="images/robot_photo.jpg" alt="RONIN v1 — 3 lb horizontal spinner robot" width="280"/> &nbsp;
+<img src="images/robot_photo2.jpg" alt="RONIN v1 — 3 lb horizontal spinner robot, second view" width="280"/>
 
 </div>
 
