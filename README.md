@@ -1,12 +1,12 @@
 <!--
-  RONNIN — 3 lb Combat Robot README
+  RONIN — 3 lb Combat Robot README
   Placeholders marked [LIKE THIS] are details only you know; fill them in or
   reply and I'll update them.
 -->
 
 <div align="center">
 
-#  RONNIN
+# RONIN
 
 ### 3 lb (1.36 kg) Beetleweight Combat Robot — Belt-Driven Wedge
 
@@ -21,18 +21,19 @@
 
 ##  Overview
 
-<img src="images/robot_hero.jpg" alt="RONNIN — belt-driven 3 lb wedge robot" width="600"/>
+<img src="images/robot_hero.jpg" alt="RONIN — belt-driven 3 lb wedge robot" width="600"/>
 
 > _A compact, belt-driven 3 lb combat robot engineered for durability, ease of
-> maintenance, and consistent performance in high-impact matches. RONNIN's
+> maintenance, and consistent performance in high-impact matches. RONIN's
 > architecture focuses on robust drive power, efficient energy distribution,
 > and a reinforced front wedge built for pushing, deflecting, and controlling
 > opponents._
 
-Built for the **3 lb (1.36 kg) beetleweight class**, RONNIN is designed to be
+Built for the **3 lb (1.36 kg) beetleweight class**, RONIN is designed to be
 **serviceable between matches** — a modular two-piece frame with clean wiring
-and a reinforced aluminum structure that keeps repair times short and combat
-performance consistent.
+and a lightweight multi-material build (printed PETG / TPU 95A frame with a
+7075 aluminum wedge) that keeps repair times short and combat performance
+consistent.
 
 ---
 
@@ -52,7 +53,8 @@ performance consistent.
 ###  Chassis
 | Item         | Specification                         |
 | ------------ | ------------------------------------- |
-| Material     | 6061-T6 aluminum + polycarbonate top  |
+| Material     | PETG + TPU 95A (3D printed)          |
+| Manufacturing| Bambu Lab A1 Mini (FDM)              |
 | Architecture | 2-piece modular frame                 |
 | Fasteners    | M3 / M4 stainless steel               |
 | Dimensions   | 220 × 160 × 91 mm (8.7 × 6.3 × 3.6 in) |
@@ -67,7 +69,7 @@ performance consistent.
 | Mainboard   | **Just 'Cuz Motherboard V4** (Just 'Cuz Robotics) |
 | Receiver    | **FS2A** — AFHDS-2A protocol           |
 | Wheels      | 43 mm (1.7 in) rubber / foam          |
-| Belts       | **GT2 reinforced timing belts**        |
+| Belts       | **S3M timing belts** (74 teeth · 4 mm)  |
 | Top speed   | **~3.5 m/s (12.6 km/h · 7.8 mph)** theoretical · ~2.6 m/s (9.4 km/h) realistic |
 
 ###  Power System
@@ -75,7 +77,7 @@ performance consistent.
 | ----------------- | --------------------------------- |
 | Battery           | Tattu 3S LiPo · 11.1 V · 450 mAh · 75C |
 | Connectors        | XT30                              |
-| Power distribution| Custom micro-PD board             |
+| Power distribution| DartPCB (Just 'Cuz)                |
 | Safety            | External power switch + removable link |
 
 ###  Electronics
@@ -93,7 +95,7 @@ performance consistent.
 ##  Design & Engineering
 
 ### Design Philosophy
-RONNIN is a **pushing-and-control robot**. Instead of chasing high-energy
+RONIN is a **pushing-and-control robot**. Instead of chasing high-energy
 weapon hits, it wins through sustained aggression: getting its wedge under
 opponents, driving them into hazards, and disrupting their weapon mounts and
 drive chains. That philosophy drives three decisions:
@@ -107,33 +109,39 @@ drive chains. That philosophy drives three decisions:
 
 ### Drivetrain
 Two **DartBox V2 Drive gearmotors (VIPER model, 22 mm)** turn both wheels through
-**GT2 reinforced timing belts**, powered by the **WEKA 20A Dual Brushed Motor
+**S3M timing belts**, powered by the **WEKA 20A Dual Brushed Motor
 Controller** and managed by the **Just 'Cuz Motherboard V4** mainboard. The
 DartBox V2 motors are lightweight and ultra-powerful for their size, giving
-RONNIN a strong power-to-weight ratio. Belt drive reduces shock loading on
+RONIN a strong power-to-weight ratio. Belt drive reduces shock loading on
 the motors and drivetrain during impacts — a key reliability win over direct
 chain-drive setups — while the WEKA dual ESC delivers smooth, high-traction
 torque for pushing matches.
 
 > 📐 **Top-speed estimate:** Based on the DartBox V2 Drive output (1550 RPM @ 3S)
-> and 43 mm wheels, RONNIN reaches ~3.5 m/s (12.6 km/h · 7.8 mph) theoretical
+> and 43 mm wheels, RONIN reaches ~3.5 m/s (12.6 km/h · 7.8 mph) theoretical
 > no-load top speed. Accounting for battery sag, friction, and belt losses, a
 > realistic figure is ~2.6 m/s (9.4 km/h · 5.9 mph).
 
 | Config      | Drive                                   | Electronics                          |
 | ----------- | --------------------------------------- | ------------------------------------ |
-| **Current** | 2× DartBox V2 Drive (VIPER) + GT2 belts | WEKA 20A dual ESC · JCMB V4 · FS2A  |
+| **Current** | 2× DartBox V2 Drive (VIPER) + S3M belts | WEKA 20A dual ESC · JCMB V4 · FS2A  |
 | **Planned** | Brushless D3536 drivetrain              | 1200 kV motor + 40 A ESC            |
 
-> 🔧 **Upgrade path:** For higher acceleration, RONNIN can swap to a
+> 🔧 **Upgrade path:** For higher acceleration, RONIN can swap to a
 > **brushless D3536** drivetrain (e.g., 1200 kV with a 40 A ESC) — trading some
 > low-end simplicity for faster wheel speed and lighter electronics.
 
 ### Weapon
-RONNIN's "weapon" is its **reinforced front wedge**: a low-sweep, angled
-blade that gets under opponents and lifts their wheels for positional control.
-The wedge geometry is optimized for **steel arena floors**, and is re-torqued
-at every event to keep engagement angle consistent.
+RONIN's "weapon" is its **reinforced 7075-T6 aluminum front wedge**: a
+low-sweep, angled blade that gets under opponents and lifts their wheels for
+positional control. The wedge geometry is optimized for **steel arena floors**,
+and is re-torqued at every event to keep engagement angle consistent.
+
+### Chassis & Manufacturing
+RONIN's modular frame is **3D printed on a Bambu Lab A1 Mini** in **PETG** for
+structural rigidity, with **TPU 95A** parts where flexibility and shock
+absorption matter. This multi-material approach keeps the robot lightweight,
+reduces part count, and makes it fast to reprint spare parts between events.
 
 ---
 
@@ -146,7 +154,7 @@ at every event to keep engagement angle consistent.
 
 ### 2. Drivetrain Installation
 1. Mount the drive motors securely; apply **thread-locker**.
-2. Align pulleys and tension the GT2 belts.
+2. Align pulleys and tension the S3M belts.
 3. Install wheels and verify free rotation.
 
 ### 3. Electronics Setup
@@ -183,21 +191,28 @@ at every event to keep engagement angle consistent.
 
 ---
 
-##  Bill of Materials (BOM)
+## 📦 Bill of Materials (BOM)
 
-| Component      | Specification                            |
-| -------------- | ---------------------------------------- |
-| Drive motor    | 2× DartBox V2 Drive · VIPER 22 mm gearmotors |
-| Drive ESC      | WEKA 20A Dual Brushed Motor Controller   |
-| Mainboard      | Just 'Cuz Motherboard V4                 |
-| Receiver       | FS2A (AFHDS-2A protocol)                 |
-| Battery        | Tattu 3S LiPo · 450 mAh · 75C            |
-| Wheels         | 43 mm rubber / foam                        |
-| Belts          | GT2 reinforced timing belts              |
-| Chassis        | 6061-T6 Al + polycarbonate               |
-| Connectors     | XT30                                     |
-| Transmitter    | FlySky FS-i6 (AFHDS-2A)              |
-| Fasteners      | M3 / M4 stainless steel                  |
+| Component      | Specification                            | Source / Link                                   |
+| -------------- | ---------------------------------------- | ----------------------------------------------- |
+| Drive motor    | 2× DartBox V2 Drive · VIPER 22 mm        | [🔗 DartBox Drive](https://justcuzrobotics.com/products/dartbox-squared-drive) |
+| Drive ESC      | WEKA 20A Dual Brushed Motor Controller   | [🔗 WEKA 20A](https://justcuzrobotics.com/products/weka-dual-20-esc-for-brushed-drive) |
+| Mainboard      | Just 'Cuz Motherboard V4                 | [🔗 Motherboard V4](https://justcuzrobotics.com/products/motherboard) |
+| Power dist.    | DartPCB (Just 'Cuz)                      | [🔗 DartPCB](https://justcuzrobotics.com/products/dartpcb) |
+| Receiver       | FS2A (AFHDS-2A protocol)                 | [🔗 Buy / info](https://your-link.example/fs2a) |
+| Battery        | Tattu 3S LiPo · 450 mAh · 75C            | [🔗 Buy / info](https://your-link.example/tattu-3s) |
+| Wheels         | 43 mm rubber / foam                      | [🔗 Buy / info](https://your-link.example/wheels-43mm) |
+| Belts          | S3M timing belt · 74 teeth · 4 mm        | [🔗 S3M 74T Belt](https://justcuzrobotics.com/products/s3m-timing-belt-74t-4mm-wide-used-in-ssp-kits) |
+| Weapon (wedge) | 7075-T6 aluminum                         | [🔗 Buy / info](https://your-link.example/7075-wedge) |
+| Chassis        | PETG + TPU 95A (Bambu Lab A1 Mini print) | [🔗 Print settings](https://your-link.example/print-file) |
+| Connectors     | XT30                                     | [🔗 Buy / info](https://your-link.example/xt30) |
+| Transmitter    | FlySky FS-i6 (AFHDS-2A)                  | [🔗 Buy / info](https://your-link.example/fs-i6) |
+| Fasteners      | M3 / M4 stainless steel                  | [🔗 Buy / info](https://your-link.example/fasteners) |
+
+> 🔗 **Sources:** The drive motor, ESC, mainboard, power-distribution board, and
+> belt rows have live links to Just 'Cuz Robotics. The remaining
+> `your-link.example` entries are placeholders — swap in the real store / CAD /
+> print-files URLs when you have them.
 
 > Full BOM with part numbers and links: **[add file: bom.xlsx / parts/]**.
 
@@ -255,7 +270,7 @@ at every event to keep engagement angle consistent.
 
 ##  Credits
 
-RONNIN was designed, built, and driven by **Anastasis Karaivazoglou** as part
+RONIN was designed, built, and driven by **Anastasis Karaivazoglou** as part
 of the **IRONBRICK | Fibran** team.
 
 Special thanks to our sponsors **Fibran** and **JLC** for their support of the build.
@@ -271,4 +286,4 @@ Sponsors: **Fibran** and **JLC**.
 
 ---
 
-_README maintained with the RONNIN build. Last updated: September 2026._
+_README maintained with the RONIN build. Last updated: September 2026._
