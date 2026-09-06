@@ -6,10 +6,11 @@
 
 <div align="center">
 
-# RONIN
+# RONIN v1
 
 ### 3 lb (1.36 kg) Beetleweight Combat Robot — Horizontal Spinner
 
+[![Version](https://img.shields.io/badge/Version-V1-blueviolet)](#)
 [![Class](https://img.shields.io/badge/Class-3%20lb%20%7C%201.36%20kg-blue)](#)
 [![Config](https://img.shields.io/badge/Config-Horizontal%20Spinner-orange)](#)
 [![Status](https://img.shields.io/badge/Status-Competition%20Ready-green)](#)
@@ -22,7 +23,7 @@
 
 ##  Overview
 
-<img src="images/robot_hero.jpg" alt="RONIN — 3 lb horizontal spinner robot" width="600"/>
+<img src="images/robot_hero.jpg" alt="RONIN v1 — 3 lb horizontal spinner robot" width="600"/>
 
 > _A compact, belt-driven 3 lb combat robot engineered for durability, ease of
 > maintenance, and consistent performance in high-impact matches. RONIN pairs a
@@ -30,11 +31,13 @@
 > power, efficient energy distribution, and a pointed front end built for
 > pushing, deflecting, and controlling opponents._
 
-Built for the **3 lb (1.36 kg) beetleweight class**, RONIN is designed to be
+Built for the **3 lb (1.36 kg) beetleweight class**, RONIN v1 is designed to be
 **serviceable between matches** — a modular two-piece frame with clean wiring
 and a lightweight multi-material build (printed PETG / TPU 95A frame with a
 7075-T6 aluminum spinner bar) that keeps repair times short and combat
-performance consistent.
+performance consistent. This document covers **RONIN v1**, the first
+competition iteration; planned improvements are tracked in the
+upgrade roadmap below.
 
 🥈 **Debut result: 2nd place at [MRC 2026](https://minoanrobotsports.gr/)** —
 two knockout wins en route to the podium in the 3 lb knockout bracket.
@@ -255,13 +258,13 @@ reduces part count, and makes it fast to reprint spare parts between events.
 | 2026-04-05 | [MRC](https://minoanrobotsports.gr/) (Minoan Robot Sports) | 404 NOT FOUND | Win | KO               |
 | 2026-04-05 | [MRC](https://minoanrobotsports.gr/) (Minoan Robot Sports) | BigHero 1 | Loss | Battery exploded    |
 
-> **Record: 2–1** — two wins (one by KO) and one loss at the same MRC event.
+> **Record: 2–1** — two wins (by KO) and one loss at the same MRC event.
 
-### 🏆 Tournament Results
+###  Tournament Results
 
 | Event | Date | Placement |
 |---|---|---|
-| [MRC](https://minoanrobotsports.gr/) (Minoan Robot Sports) — 3 lb knockout bracket | 2026-04-05 | 🥈 **2nd Place** |
+| [MRC](https://minoanrobotsports.gr/) (Minoan Robot Sports) — 3 lb knockout bracket | 2026-04-05 |  **2nd Place** |
 
 > RONIN fought through the MRC knockout bracket to a **2nd-place finish** — dropping only the semifinal-style bout against BigHero 1 (battery failure) after two KO wins earlier in the day.
 
@@ -276,11 +279,16 @@ reduces part count, and makes it fast to reprint spare parts between events.
 
 ---
 
-##  Upgrade Roadmap
+##  Upgrade Roadmap — v1 → v2
+
+Completed in **v1** (this build):
 
 - [x] Horizontal spinner weapon — 7075-T6 bar + D3536 (1450 kV) + 80 A ESC
 - [x] Belt-driven dual-wheel drivetrain
 - [x] Brushed drive + WEKA 20A dual ESC (JCMB V4 / FS2A)
+
+Planned for **v2**:
+
 - [ ] **Weapon upgrade** — D3536 · 1200 kV + 40 A ESC (lighter, more efficient)
 - [ ] **Hardened AR500 steel wedge** — more bite and durability
 - [ ] **Gyro-assisted driving** — stability under self-righting hits
