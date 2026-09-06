@@ -320,9 +320,10 @@ Planned for **v2**:
 ##  Credits
 
 RONIN was designed, built, and driven by **Anastasis Karaivazoglou** as part
-of the **IRONBRICK | Fibran** team.
+of the **IRONBRICK | [Fibran](https://fibran.com/)** team.
 
-Special thanks to our sponsors **Fibran** and **JLC** for their support of the build.
+Special thanks to our sponsors **[Fibran](https://fibran.com/)** and
+**[JLC](https://jlccnc.com/)** for their support of the build.
 
 ##  License
 
@@ -331,7 +332,7 @@ Special thanks to our sponsors **Fibran** and **JLC** for their support of the b
 This project is provided for reference and personal use only. No part of the
 design, documentation, or media may be reproduced, distributed, or used in
 commercial or competitive projects without prior written permission.
-Sponsors: **Fibran** and **JLC**.
+Sponsors: **[Fibran](https://fibran.com/)** and **[JLC](https://jlccnc.com/)**.
 
 ---
 
