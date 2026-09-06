@@ -44,7 +44,7 @@ performance consistent. This document covers **RONIN v1**, the first
 competition iteration; planned improvements are tracked in the
 upgrade roadmap below.
 
-🥈 **Debut result: 2nd place at [MRC 2026](https://minoanrobotsports.gr/)** —
+ **Debut result: 2nd place at [MRC 2026](https://minoanrobotsports.gr/)** —
 two knockout wins en route to the podium in the 3 lb knockout bracket.
 
 ---
@@ -165,7 +165,7 @@ event to keep engagement angle consistent.
 | **Current**   | 7075-T6  | D3536 · 1450 kV       | 80 A   |
 | **Planned**   | 7075-T6  | D3536 · 1200 kV       | 40 A   |
 
-> 🔧 **Upgrade path:** The planned **D3536 · 1200 kV / 40 A** combination
+>  **Upgrade path:** The planned **D3536 · 1200 kV / 40 A** combination
 > lightens the weapon sub-assembly and improves efficiency — trading a little
 > top-end weapon speed for a smaller, simpler drive package.
 
@@ -223,7 +223,7 @@ reduces part count, and makes it fast to reprint spare parts between events.
 
 ---
 
-## 📦 Bill of Materials (BOM)
+##  Bill of Materials (BOM)
 
 | Component      | Specification                            | Source / Link                                   |
 | -------------- | ---------------------------------------- | ----------------------------------------------- |
@@ -246,7 +246,7 @@ reduces part count, and makes it fast to reprint spare parts between events.
 | Transmitter    | FlySky FS-i6 (AFHDS-2A)                  | [🛒 AliExpress](https://www.aliexpress.com/item/1005005910087379.html) |
 | Fasteners      | M3 screw kit · 304 SS · brass thread inserts (M3 × 10 mm) | [🛒 M3 Kit](https://www.aliexpress.com/item/1005007299422418.html) · [🛒 M3 304 SS](https://www.aliexpress.com/item/1005004861140396.html) · [🛒 Brass Inserts](https://www.aliexpress.com/item/1005006472962973.html) |
 
-> 🔗 **Sources:** Live links for the DartBox drive, WEKA 20A, Motherboard V4,
+>  **Sources:** Live links for the DartBox drive, WEKA 20A, Motherboard V4,
 > DartPCB, and S3M belt (Just 'Cuz), plus the weapon ESC and FS2A receiver
 > (AliExpress). The remaining `your-link.example` entries are placeholders —
 > swap in the real store / CAD / print-files URLs when you have them.
