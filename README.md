@@ -87,7 +87,7 @@ two knockout wins en route to the podium in the 3 lb knockout bracket.
 | Drive ESC   | **WEKA 20A** Dual Brushed Motor Controller |
 | Mainboard   | **Just 'Cuz Motherboard V4** (Just 'Cuz Robotics) |
 | Receiver    | **FS2A** — AFHDS-2A protocol           |
-| Wheels      | 43 mm (1.7 in) rubber / foam          |
+| Wheels      | 43 mm (1.7 in) rubber / foam ([Silicon_Wheels](https://github.com/AnastKara/Silicon_Wheels)) |
 | Belts       | **S3M timing belts** (74 teeth · 4 mm)  |
 | Top speed   | **~3.5 m/s (12.6 km/h · 7.8 mph)** theoretical · ~2.6 m/s (9.4 km/h) realistic |
 
@@ -245,7 +245,7 @@ reduces part count, and makes it fast to reprint spare parts between events.
 | Power dist.    | DartPCB (Just 'Cuz)                      | [🔗 DartPCB](https://justcuzrobotics.com/products/dartpcb) |
 | Receiver       | FS2A (AFHDS-2A protocol)                 | [🛒 AliExpress](https://www.aliexpress.com/item/1005006913201646.html) |
 | Battery        | Tattu 3S LiPo · 450 mAh · 75C            | [🛒 AliExpress](https://www.aliexpress.com/item/1005011861263060.html) |
-| Wheels         | 43 mm rubber / foam                      | [🔗 Buy / info](https://your-link.example/wheels-43mm) |
+| Wheels         | 43 mm rubber / foam                      | [🔗 Silicon_Wheels](https://github.com/AnastKara/Silicon_Wheels) |
 | Belts          | S3M timing belt · 74 teeth · 4 mm        | [🔗 S3M 74T Belt](https://justcuzrobotics.com/products/s3m-timing-belt-74t-4mm-wide-used-in-ssp-kits) |
 | Weapon pulley  | S3M pulley · 3M-222 · 10 mm width       | [🛒 AliExpress](https://www.aliexpress.com/item/1005005935127676.html) |
 | Weapon bar     | 7075-T6 aluminum (horizontal spinner)    | [🔗 CNC (JLC)](https://jlccnc.com/cnc-machining-quote) |
@@ -349,6 +349,17 @@ All CAD is provided as **STEP** files (universal — open in Fusion 360, SolidWo
 | Small weapon pulley | [`Small_Weapon_Pulley.step`](Ronin_V1/Parts/TPU_Parts/Small_Weapon_Pulley.step) |
 | Left outer wing | [`Left_Outer_Wing.step`](Ronin_V1/Parts/TPU_Parts/Left_Outer_Wing.step) |
 | Right outer wing | [`Right_Outer_Wing.step`](Ronin_V1/Parts/TPU_Parts/Right_Outer_Wing.step) |
+
+###  Wheels — `Ronin_V1/Parts/Wheels/` (cast silicone tires · [Silicon_Wheels](https://github.com/AnastKara/Silicon_Wheels) project)
+
+| Part | File |
+|---|---|
+| Front wheel | [`Front_Wheel.step`](Ronin_V1/Parts/Wheels/Front_Wheel.step) |
+| Rear wheel | [`Rear_Wheel.step`](Ronin_V1/Parts/Wheels/Rear_Wheel.step) |
+
+> Wheel hub and casting files (including the `Combat_Robot_Silicon_Mold.stl`) live
+> in the companion [Silicon_Wheels](https://github.com/AnastKara/Silicon_Wheels)
+> repo, along with print settings and the full casting procedure.
 
 ---
 
